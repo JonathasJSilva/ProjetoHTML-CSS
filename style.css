@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    transition: all .35s ease;
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    padding: 14px 14%;
+}
+
+.logo{
+    color: #000;
+}
+
+nav li{
+    display: inline-block;
+    gap: 3;
+}
+
+nav li a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+}
+
+.dropdown-menu a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.meio {
+    background-color: #fff;
+    padding: 10rem 0 0 8.5rem;
+    line-height: 4rem;
+}
+
+.meio h1 {
+    font-size: 4rem;
+}
+
+section {
+    padding-top: 7rem;
+}
+
+section h1 {
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+article{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+article img{
+    width: 200px;
+    height: 200px;
+    transition: 0.35s ease;
+}
+
+article img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+}
+
+/* Formulário*/
+#titulo {
+    background-color: skyblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+#subtitulo {
+    background-color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+button{
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: grab;
+    font-size: 80%;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 16px 0;
+}
+
+fieldset {
+    border: 0;
+    text-align: center;
+}
+
+input,
+textarea,
+button {
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 0.2em;
+    color: #000;
+    display: block;
+}
+
+fieldset .grupo {
+    float: left;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 10pt;
+    color: #000;
+    position: absolute;
+    left: 46%;
+    min-width: auto;
+    width: auto;
+    border: solid 1px;
+    display: block;
+    cursor: grab;
+}
+
+p.footer{
+    padding: 10px;
+    text-align: center;
+}
+
+.social{
+    text-align: center;
+    padding: 14px;
+}
+@media screen and (max-width: 768px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background: #fff;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1rem;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        position: fixed;
+        transition: all .35s ease;
+        background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+        padding: 14px 14%;
+    }
+
+    .logo{
+        display: none;
+        color: #000;
+    }
+    
+    nav li{
+        display: inline-block;
+        gap: 3;
+    }
+    
+    nav li a{
+        display: inline-block;
+        color: #000;
+        text-decoration: none;
+        padding: 6px;
+    }
+    
+    .dropdown-menu{
+        position: absolute;
+        display: none;
+        background-color: #fff;
+    }
+    
+    .dropdown-menu a:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .dropdown-menu a{
+        display: block;
+        color: #000;
+    }
+    
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+
+    section {
+        padding-top: 6rem;
+    }
+    
+    section h1 {
+        background-color: #000;
+        color: #fff;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    
+    article{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    article.meio{
+        display: none;
+    }
+    
+    article img{
+        width: 130px;
+        height: 130px;
+    }
+    
+    /* Formulário*/
+    #titulo {
+        background-color: skyblue;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #000;
+        text-align: center;
+    }
+    
+    #subtitulo {
+        background-color: #000;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    
+    button{
+        background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        border-radius: 32px;
+        border: 0;
+        cursor: grab;
+        font-size: 80%;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 16px 0;
+    }
+    
+    fieldset {
+        border: 0;
+        text-align: center;
+    }
+    
+    input,
+    textarea,
+    button {
+        border-radius: 5px;
+    }
+    
+    label {
+        margin-bottom: 0.2em;
+        color: #000;
+        display: block;
+    }
+    
+    fieldset .grupo {
+        float: left;
+        margin-right: 1em;
+    }
+    
+    .botao {
+        font-size: 10pt;
+        color: #000;
+        position: absolute;
+        left: 35%;
+        min-width: auto;
+        width: auto;
+        border: solid 1px;
+        display: block;
+        cursor: grab;
+    }
+    
+    p.footer{
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .social{
+        text-align: center;
+        padding: 14px;
+    }
+}

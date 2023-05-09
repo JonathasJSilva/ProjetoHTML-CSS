@@ -29,7 +29,7 @@ header {
     z-index: 1000;
     position: fixed;
     transition: all .35s ease;
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    background: linear-gradient(115deg, #ffffff 0, #fffcfe 16.67%, #f9eef0 33.33%, #dedede 50%, #c4cecb 66.67%, #aec0b9 83.33%, #9bb4a7 100%);
     padding: 14px 14%;
 }
 
@@ -68,17 +68,6 @@ nav li a{
 .dropdown:hover .dropdown-menu{
     display: block;
 }
-
-.meio {
-    background-color: #fff;
-    padding: 10rem 0 0 8.5rem;
-    line-height: 4rem;
-}
-
-.meio h1 {
-    font-size: 4rem;
-}
-
 section {
     padding-top: 7rem;
 }
@@ -89,6 +78,7 @@ section h1 {
     align-items: center;
     text-align: center;
     font-size: 2rem;
+    padding: 4px;
 }
 
 
@@ -102,8 +92,13 @@ article{
 
 article img{
     width: 200px;
-    height: 200px;
+    height: 150px;
     transition: 0.35s ease;
+}
+
+.bebidas img{
+    width: 130px;
+    height: 230px;
 }
 
 article img:hover{
@@ -206,7 +201,7 @@ p.footer{
         z-index: 1000;
         position: fixed;
         transition: all .35s ease;
-        background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+        background: linear-gradient(115deg, #ffffff 0, #fffcfe 16.67%, #f9eef0 33.33%, #dedede 50%, #c4cecb 66.67%, #aec0b9 83.33%, #9bb4a7 100%);
         padding: 14px 14%;
     }
 
@@ -268,14 +263,10 @@ p.footer{
         gap: 2rem;
         padding-top: 2rem;
     }
-
-    article.meio{
-        display: none;
-    }
     
     article img{
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
     }
     
     /* Formulário*/
